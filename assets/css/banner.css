@@ -1,0 +1,119 @@
+/*BANNER*/
+
+.BannerMainContainer {
+    height: 40vw;
+    position: relative;
+    color: white;
+    background-size: cover;
+    background-position: top;
+    background-image: url('../img/Elton_John_Foto_2.png');
+}
+
+@media(max-width: 880px) {
+    .BannerMainContainer {
+        height: auto;
+        min-height: 50vh;
+    }
+}
+
+.BannerMainContainer::after,
+.BannerMainContainer::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 20%;
+}
+
+.BannerMainContainer::before {
+    top: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.BannerMainContainer::after {
+    bottom: 0;
+    background: linear-gradient(0deg, #ffffff 0%, transparent 100%);
+}
+
+.ContentAreaContainer {
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+}
+
+@media(max-width: 880px) {
+    .ContentAreaContainer {
+        padding-top: 100px;
+        flex-direction: column;
+    }
+}
+
+.Item {
+    width: 50%;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+
+@media(max-width: 880px) {
+    .Item {
+        width: 100%;
+    }
+}
+
+.Title {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 1;
+    margin-top: 0;
+    margin-bottom: 32px;
+}
+
+@media(max-width: 880px) {
+    .Title {
+        font-size: 32px;
+        text-align: center;
+    }
+}
+
+.Description {
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+@media(max-width: 880px) {
+    .Description {
+        display: none;
+    }
+}
+
+.VideoContainer {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+}
+
+@media(max-width: 880px) {
+    .VideoContainer {
+        display: none;
+    }
+}
+
+.ResponsiveVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}

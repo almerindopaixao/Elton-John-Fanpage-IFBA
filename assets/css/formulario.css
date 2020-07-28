@@ -1,0 +1,103 @@
+#root {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: calc(100vh - var(--bodyPaddingTop));
+    background: var(--harmony-color);
+}
+
+.container {
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    margin: 2% auto;
+    border-radius: 20px;
+    width: 40%;
+}
+
+[caixa] {
+    font-size: 20px;
+    width: 100%;
+    height: 40px;
+    margin-top: 15px;
+    outline: none;
+    margin-bottom: 10px;
+    border: 1px solid rgba(19, 18, 18, 0.568);
+    border-radius: 10px;
+}
+
+textarea {
+    font-size: 20px;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    outline: none;
+    border: 1px solid rgba(19, 18, 18, 0.568);
+    border-radius: 10px;
+}
+
+[caixa]:focus, textarea {
+    border: 1.4px solid var(--primary-color);
+}
+
+
+h1 {
+    font-weight: 300;
+    text-align: justify;
+}
+
+.formulario label {
+    display: block;
+    padding: 10px 0;
+}
+
+.botao {
+    width: 80px;
+    height: 50px;
+    color: white;
+    font-size: 1em;
+    background-color: var(--primary-color);
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+input[type="checkbox"] {
+    cursor: pointer;
+}
+
+.botao:hover {
+    background-color: #0b2b30;
+}
+
+.botao:active {
+    background-color: var(--harmony-color);
+}
+
+.container div p {
+    line-height: 1.5;
+}
+
+@media(max-width: 860px) {
+    .container {
+        width: 90%;
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-bottom: 5%;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .botao {
+        height: 40px;
+    }
+}
+
+.radio {
+    margin-right: 20px;
+    cursor: pointer;
+}

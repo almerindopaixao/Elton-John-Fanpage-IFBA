@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+/*Resetando a formatação padrão da página*/
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --primary-color: #092327;
+    --secondary-color: #0f3c43;
+    --destaque-color: #64b6ac;
+    --button-color: #c0fdfb;
+    --harmony-color: #daffef;
+    --clear-color: #fcfffd;
+}
+  
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+a {
+    color: inherit;
+}

@@ -1,0 +1,191 @@
+/*HEADER*/
+
+/*Configurando a logo do site no modo normal e responsivo*/
+.logo {
+    max-width: 168px;
+}
+
+@media(max-width: 1050px) {
+    .logo {
+        max-width: 75px;
+    }
+}
+/*Configurando cabecalho*/
+.cabecalho {
+    width: 100%;
+    height: 94px;
+    z-index: 100;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-left: 5%;
+    padding-right: 10%;
+
+    background-color: var(--primary-color);
+    border-bottom: 2px solid var(--destaque-color);
+}
+
+body {
+    --bodyPaddingTop: 94px;
+    padding-top: var(--bodyPaddingTop);
+}
+
+@media(max-width: 1050px) {
+    .cabecalho {
+        height: 60px;
+
+    }
+
+    .cabecalho nav {
+        display: none;
+    }
+
+    body {
+        --bodyPaddingTop: 60px;
+        padding-top: var(--bodyPaddingTop);
+    }
+
+}
+
+/*Configurando o menu*/
+.menu {
+    list-style: none;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.menu li a {
+    text-decoration: none;
+}
+
+/*Configurando o menu no modo responsivo*/
+#check,
+.barra,
+#icone {
+    display: none;
+}
+
+#icone {
+    color: white;
+    cursor: pointer;
+    padding: 0 6px 4px 5px;
+    font-size: normal;
+    font-size: 30px;
+    font-weight: bold;
+    outline: none;
+    align-items: center;
+    transition: opacity .3s;
+}
+
+#icone:hover,
+#icone:focus {
+    border: 1px solid white;
+    box-sizing: border-box;
+    border-radius: 5px;
+    opacity: .5;
+}
+
+.barra {
+    background-color: var(--primary-color);
+    height: 100%;
+    width: 250px;
+    position: absolute;
+    transition: all .2s linear;
+    top: 0;
+    left: -250px;
+}
+
+.barra nav {
+    width: 100%;
+    position: absolute;
+    top: 60px;
+}
+
+.barra nav a {
+    text-decoration: none;
+}
+
+.link {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    font-size: 12pt;
+    transition: all .2s linear;
+    color: white;
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.link:hover {
+    opacity: .8;
+}
+
+#check:checked ~.cabecalho {
+    z-index: 100;
+}
+
+#check:checked ~ .barra {
+    z-index: 500;
+    transform: translateX(250px);
+}
+
+@media(max-width: 1050px) {
+    #icone {
+        display: inline-block;
+    }
+
+    .barra {
+        display: block;
+        position: fixed;
+    }
+
+}
+
+/*Configurando os botões*/
+
+.buttonLink {
+    color: white;
+    padding: 16px 24px;
+    cursor: pointer;
+    font-style: normal;
+    font-size: 16px;
+    outline: none;
+    text-decoration: none;
+    transition: opacity .3s;
+}
+
+.buttonLink:hover,
+.buttonLink:focus {
+    border: 1px solid white;
+    box-sizing: border-box;
+    border-radius: 5px;
+    opacity: .5; 
+}
+
+.ver-mais {
+    color: white;
+    border: 1px solid white;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 16px 24px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    outline: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: opacity .3s;
+}
+
+.ver-mais:hover,
+.ver-mais:focus {
+    opacity: .5;
+}
+

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Almerindo da Paixão Junior">
+    <meta name="description" content="Site criado apenas para fins acadêmicos, e com a finalidade de ser uma fanpage não oficial do cantor Elton John">
+    <title>Elton John - Formulario</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/header.css">
+    <link rel="stylesheet" typer="text.css" href="assets/css/formulario.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
+</head>
+<body>
+    <div id="root">
+        <!--Checkbox do menu hamburguer-->
+        <input type="checkbox" id="check">
+        <!--Menu responsivo-->
+        <div class="barra">
+            <nav>
+                <a href="/"><div class="link">Home</div></a>
+                <a href="https://www.eltonjohn.com/" target="_blank"><div class="link">Site Oficial</div></a>
+            </nav>
+        </div>
+        <header class="cabecalho">
+            <a href="/">
+                <img class="logo" src="assets/img/Logo.png" alt="Elton John Logo" title="Acesse a home">
+            </a>
+            <label id="icone" for="check">
+                &#9776;
+            </label>
+            <nav>
+                <ul class="menu">
+                    <li><a class="buttonLink" href="/">Home</a></li>
+                    <li><a class="ver-mais" href="https://www.eltonjohn.com/" target="_blank">Site Oficial</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="container">
+            <div>
+                <h1>Formulário para cadastro</h1>
+                <p>Quer ficar por dentro sobre tudo que acontece na vida do Elton John? Então cadastre-se no nosso site preenchendo o formulário abaixo</p>
+            </div>
+            <div>
+                <form class="formulario" action="/"  method="POST">
+                    <label for="">
+                        Nome:
+                        <input caixa="" name="nome" type="text">
+                    </label>
+                    <label for="">
+                        Email:
+                        <input caixa="" name="email" type="email">
+                    </label>
+                    <label for="">
+                        Senha:
+                        <input caixa="" name="senha" type="password" name="" id="">
+                    </label>
+                    <label for="">
+                        <input name="checkbox"  type="checkbox" name="" id="">
+                        Deseja receber notificações no seu email
+                    </label>
+                    <label for="">
+                        A quanto tempo você se tornou fã do Elton John?
+                        <p><input class="radio" type="radio" name="tempo" id="" value="Alguns meses">Alguns meses</p>
+                        <p><input class="radio" type="radio" name="tempo" id="" value="1 ano a 5 anos">1 ano a 5 anos</p>
+                        <p><input class="radio" type="radio" name="tempo" id="" value="5 anos a 10 anos">5 anos a 10 anos</p>
+                        <p><input class="radio" type="radio" name="tempo" id="" value="Mais de 10 anos">Mais de 10 anos</p>
+                    </label>
+                    <label for="">
+                        Sugestões:
+                        <textarea name="sugestao" cols="30" rows="10"></textarea>
+                    </label>
+                    <input class="botao" type="submit">
+                    <input class="botao" type="reset">
+                </form>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; Almerindo Paixão</p>
+        </footer>
+    </div>
+</body>
+</html>

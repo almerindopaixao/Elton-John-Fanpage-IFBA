@@ -1,0 +1,139 @@
+/*Conteudo*/
+
+#container {
+    margin-left: 5%;
+    margin-right: 11%;
+}
+
+#container section {
+    margin-top: 4%;
+}
+
+#container hr {
+    margin-top: 5%;
+}
+
+hr {
+    opacity: .4;
+}
+
+#container h2 {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+#container h3 {
+    font-weight: 500;
+}
+
+#biografia p {
+    text-align: justify;
+    line-height: 2;
+}
+
+.linha {
+    margin-left: 5%;
+    margin-right: 11%;
+    margin-top: 5%;
+}
+
+/*Fotos*/
+
+#galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    grid-column-gap: 30px;;
+    grid-row-gap: 30px;
+}
+
+/*Zoom*/
+
+.zoom img {
+    width: 350px;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border-radius: 5px;
+}
+
+@media(max-width: 1290px) {
+    .zoom img {
+        width: 95%;
+    }
+}
+
+@media(max-width: 663px) {
+    #galeria {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .zoom img {
+        width: 100%;
+    }
+
+    .zoom:hover img {
+        -moz-transform: none;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.zoom:hover img {
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+/*Agenda*/
+
+.table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    border-radius: 5px;
+}
+
+@media(max-width: 1246px) {
+    .evento {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media(max-width: 824px) {
+    .table {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width: 556px) {
+    .table {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.evento {
+    display: flex;
+    background-color: white;
+    margin: 5%;
+    padding: 0 4%;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+    cursor: pointer;
+    box-sizing: border-box;
+    z-index: 10;
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.2), 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.info {
+    line-height: 0.5;
+}
+
+.espec {
+    color: grey;
+}
